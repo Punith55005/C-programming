@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    char employee_id[11];
+    float worked_hours, hourly_salary, total_salary;
+
+    // Accept inputs
+    printf("Employee ID (max 10 chars): ");
+    scanf("%10s", employee_id);
+    printf("Working hours: ");
+    scanf("%f", &worked_hours);
+    printf("Salary amount/hr: ");
+    scanf("%f", &hourly_salary);
+
+    // Calculate salary
+    total_salary = worked_hours * hourly_salary;
+
+    // Print output
+    printf("ID: %s\n", employee_id);
+    printf("Salary: Rs. %.2f\n", total_salary);
+
+    return 0;
+}
