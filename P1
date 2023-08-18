@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    // The "#include" directive includes the standard input/output library.
+    // This library provides functions for input and output operations.
+
+    printf("Hello, World!\n");
+    // The "printf" function is used to print text to the standard output.
+    // In this case, it prints "Hello, World!" followed by a newline character.
+
+    return 0;
+    // The "return 0" statement indicates that the program has executed successfully.
+    // The value 0 is returned to the operating system as an indication of success.
+}
