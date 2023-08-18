@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    // Initialize variables
+    int integer_var = 42;
+    float float_var = 3.14;
+    char character_var = 'A';
+    long long_integer_var = 1234567890123456789;
+    unsigned long long unsigned_long_integer_var = 9876543210987654321;
+
+    // Print variables
+    printf("Integer: %d\n", integer_var);
+    printf("Float: %f\n", float_var);
+    printf("Character: %c\n", character_var);
+    printf("Long Integer: %ld\n", long_integer_var);
+    printf("Unsigned Long Integer: %llu\n", unsigned_long_integer_var);
+
+    return 0;
+}
