@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    char employee_id[11];
+    float worked_hours, hourly_salary, total_salary;
+
+    // Calculate and print sizes of variables
+    printf("Size of employee_id: %lu bytes\n", sizeof(employee_id));
+    printf("Size of worked_hours: %lu bytes\n", sizeof(worked_hours));
+    printf("Size of hourly_salary: %lu bytes\n", sizeof(hourly_salary));
+    printf("Size of total_salary: %lu bytes\n", sizeof(total_salary));
+
+    return 0;
+}
