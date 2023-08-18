@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    char characters[] = {'X', 'M', 'L'};
+
+    printf("Printing characters in reverse order:\n");
+    for (int i = 2; i >= 0; i--) {
+        printf("%c\n", characters[i]);
+    }
+
+    return 0;
+}
