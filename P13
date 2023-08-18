@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    int integer_var;
+    float float_var;
+    char character_var;
+    long long_integer_var;
+    unsigned long long unsigned_long_integer_var;
+
+    // Accept inputs
+    printf("Enter an integer: ");
+    scanf("%d", &integer_var);
+
+    printf("Enter a floating-point number: ");
+    scanf("%f", &float_var);
+
+    printf("Enter a character: ");
+    scanf(" %c", &character_var); // Note the space before %c to consume newline
+
+    printf("Enter a long integer: ");
+    scanf("%ld", &long_integer_var);
+
+    printf("Enter an unsigned long integer: ");
+    scanf("%llu", &unsigned_long_integer_var);
+
+    // Print inputs
+    printf("Integer: %d\n", integer_var);
+    printf("Float: %f\n", float_var);
+    printf("Character: %c\n", character_var);
+    printf("Long Integer: %ld\n", long_integer_var);
+    printf("Unsigned Long Integer: %llu\n", unsigned_long_integer_var);
+
+    return 0;
+}
