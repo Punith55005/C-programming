@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int number = 42;
+    int number;
 
-    printf("The initialized integer is: %d\n", number);
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    printf("You entered: %d\n", number);
 
     return 0;
 }
