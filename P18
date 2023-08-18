@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    unsigned int myUnsignedInt;
+
+    // Input a negative value into an unsigned int variable
+    printf("Enter a negative value: ");
+    scanf("%d", &myUnsignedInt);
+
+    // Print using various format specifiers
+    printf("Value as unsigned int: %u\n", myUnsignedInt);
+    printf("Value as decimal int: %d\n", myUnsignedInt);
+    printf("Value as hexadecimal: %x\n", myUnsignedInt);
+    printf("Value as character: %c\n", myUnsignedInt);
+
+    return 0;
+}
