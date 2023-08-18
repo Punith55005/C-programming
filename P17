@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int integer = 12345;
+    float floating = 123.456789;
+    char character = 'A';
+
+    printf("Integer with field width 10: %10d\n", integer);
+    printf("Floating-point with field width 15: %15f\n", floating);
+    printf("Character: %c\n", character);
+    printf("Character with field width 10: %10c\n", character);
+    printf("Floating-point with width 10 and precision 2: %10.2f\n", floating);
+    printf("Floating-point with width 15 and precision 3: %15.3f\n", floating);
+
+    return 0;
+}
