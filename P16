@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    // Read a character
+    printf("Enter a character: ");
+    scanf(" %c", &ch); // Note the space before %c to consume newline
+
+    // Print ASCII value
+    printf("ASCII value of '%c' is %d\n", ch, ch);
+
+    return 0;
+}
