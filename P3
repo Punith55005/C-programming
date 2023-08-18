@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void printF() {
+    for (int i = 0; i < 6; i++) {
+        printf("#\n");
+        if (i == 2)
+            printf("#####\n");
+    }
+    printf("\n");
+}
+
+void printBigC() {
+    printf(" #####\n");
+    printf("#\n");
+    printf("#\n");
+    printf("#\n");
+    printf(" #####\n");
+}
+
+int main() {
+    printf("Printing 'F':\n");
+    printF();
+
+    printf("Printing big 'C':\n");
+    printBigC();
+
+    return 0;
+}
