@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int integer_var = 2147483648; // Trying to initialize with a value greater than INT_MAX
+
+    printf("Integer: %d\n", integer_var);
+
+    return 0;
+}
