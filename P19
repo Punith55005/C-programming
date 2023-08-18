@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+long int absoluteValue(long int num) {
+    if (num < 0) {
+        return -num;
+    } else {
+        return num;
+    }
+}
+
+int main() {
+    long int input;
+
+    printf("Enter a long integer: ");
+    scanf("%ld", &input);
+
+    long int absValue = absoluteValue(input);
+    printf("Absolute value: %ld\n", absValue);
+
+    return 0;
+}
