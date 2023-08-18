@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float num;
+
+    // Read the floating-point number with 6 decimal places
+    printf("Enter a floating-point number with 6 decimal places: ");
+    scanf("%f", &num);
+
+    // Print the number with different decimal places
+    printf("Original: %.6f\n", num);
+    printf("Shortened to 1 decimal place: %.1f\n", num);
+    printf("Shortened to 2 decimal places: %.2f\n", num);
+    printf("Shortened to 3 decimal places: %.3f\n", num);
+    printf("Shortened to 4 decimal places: %.4f\n", num);
+    printf("Shortened to 5 decimal places: %.5f\n", num);
+
+    return 0;
+}
