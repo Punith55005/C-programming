@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a; // Side length of the square
+    float radius, area;
+    const float pi = 3.14159;
+
+    // Input the side length of the square
+    printf("Enter the side length of the square (a): ");
+    scanf("%f", &a);
+
+    // Calculate the radius and area of the circle
+    radius = a / 2;
+    area = pi * pow(radius, 2);
+
+    // Display the area of the circle
+    printf("The area of the circle inscribed within the square is: %.2f\n", area);
+
+    return 0;
+}
