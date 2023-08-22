@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int myVariable = 123;
+
+    printf("The value of myVariable is: %d\n", myVariable);
+
+    return 0;
+}
