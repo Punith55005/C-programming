@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    
+    printf("Enter two integer values 'a' and 'b': ");
+    scanf("%d %d", &a, &b);
+
+    // Bitwise NOT (~) operation
+    int bitwiseNot_a = ~a;
+    int bitwiseNot_b = ~b;
+
+    // Bitwise AND (&) operation
+    int bitwiseAnd_result = a & b;
+
+    // Bitwise XOR (^) operation
+    int bitwiseXor_result = a ^ b;
+
+    // Bitwise left shift (<<) operation
+    int bitwiseLeftShift_a = a << 1;
+    int bitwiseLeftShift_b = b << 1;
+
+    // Bitwise right shift (>>) operation
+    int bitwiseRightShift_a = a >> 1;
+    int bitwiseRightShift_b = b >> 1;
+
+    // Unitary bitwise NOT (!) operation on 'a'
+    int unitaryBitwiseNot_a = !a;
+
+    // Print the results of the operations
+    printf("Bitwise NOT operation on 'a': %d\n", bitwiseNot_a);
+    printf("Bitwise NOT operation on 'b': %d\n", bitwiseNot_b);
+    printf("Bitwise AND operation between 'a' and 'b': %d\n", bitwiseAnd_result);
+    printf("Bitwise XOR operation between 'a' and 'b': %d\n", bitwiseXor_result);
+    printf("Bitwise left shift operation on 'a': %d\n", bitwiseLeftShift_a);
+    printf("Bitwise left shift operation on 'b': %d\n", bitwiseLeftShift_b);
+    printf("Bitwise right shift operation on 'a': %d\n", bitwiseRightShift_a);
+    printf("Bitwise right shift operation on 'b': %d\n", bitwiseRightShift_b);
+    printf("Unitary bitwise NOT operation on 'a': %d\n", unitaryBitwiseNot_a);
+
+    return 0;
+}
