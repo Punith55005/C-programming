@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    const int myConstant = 42;
+
+    printf("Original value of myConstant: %d\n", myConstant);
+
+    // Attempt to change the value (This will result in a compilation error)
+    // myConstant = 100;
+
+    printf("Modified value of myConstant: %d\n", myConstant);
+
+    return 0;
+}
