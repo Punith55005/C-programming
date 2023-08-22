@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int input, increment1, decrement1;
+
+    printf("Enter an integer: ");
+    scanf("%d", &input);
+
+    // Perform single increment and decrement operations
+    increment1 = input + 1;
+    decrement1 = input - 1;
+
+    printf("Original integer: %d\n", input);
+    printf("Incremented by 1: %d\n", increment1);
+    printf("Decremented by 1: %d\n", decrement1);
+
+    return 0;
+}
