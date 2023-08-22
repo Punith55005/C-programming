@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 5, c = 10;
+    int e = 15; // You can replace this with any other value you want to compare with
+
+    // Check and print the conditions
+    if (a > c && b > c) {
+        printf("Both 'a' and 'b' are greater than 'c': true\n");
+    } else {
+        printf("Both 'a' and 'b' are greater than 'c': false\n");
+    }
+
+    if (a < e && b < e) {
+        printf("Both 'a' and 'b' are smaller than 'e': true\n");
+    } else {
+        printf("Both 'a' and 'b' are smaller than 'e': false\n");
+    }
+
+    return 0;
+}
