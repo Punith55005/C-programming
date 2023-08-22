@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    const int myConstant = 42;
+
+    printf("The value of myConstant is: %d\n", myConstant);
+
+    return 0;
+}
