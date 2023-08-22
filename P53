@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3;
+
+    // Input three integers
+    printf("Enter three integers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    // Calculate the maximum using bitwise operators
+    int max = num1 ^ ((num1 ^ num2) & -(num1 < num2));
+    max = max ^ ((max ^ num3) & -(max < num3));
+
+    // Display the maximum number
+    printf("The biggest number is: %d\n", max);
+
+    return 0;
+}
