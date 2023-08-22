@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    char key;
+
+    printf("Press a key: ");
+    scanf("%c", &key);
+
+    printf("The ASCII value of '%c' is %d\n", key, key);
+
+    return 0;
+}
