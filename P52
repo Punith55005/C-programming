@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    // Input an integer
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    // Calculate the absolute value
+    int absoluteValue = (num < 0) ? -num : num;
+
+    // Display the absolute value
+    printf("Absolute value of %d is %d\n", num, absoluteValue);
+
+    return 0;
+}
