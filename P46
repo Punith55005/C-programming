@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int integerInput;
+
+    // Input an integer
+    printf("Enter an integer: ");
+    scanf("%d", &integerInput);
+
+    // Display the corresponding ASCII character
+    printf("Corresponding ASCII character: %c\n", integerInput);
+
+    return 0;
+}
