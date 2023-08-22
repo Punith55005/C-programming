@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    printf("Enter the initial value of 'a': ");
+    scanf("%d", &a);
+
+    printf("Enter the number of increments 'b': ");
+    scanf("%d", &b);
+
+    printf("Enter the number of decrements 'c': ");
+    scanf("%d", &c);
+
+    // Perform increments
+    for (int i = 0; i < b; i++) {
+        a++;
+    }
+
+    // Perform decrements
+    for (int i = 0; i < c; i++) {
+        a--;
+    }
+
+    printf("Final value of 'a' after %d increments and %d decrements: %d\n", b, c, a);
+
+    return 0;
+}
