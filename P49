@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    char organizationName[100];
+
+    // Input the organization name
+    printf("Enter the organization name: ");
+    scanf("%99[^\n]", organizationName);
+
+    // Display the welcome message with the organization name
+    printf("Welcome to \"%s\"\n", organizationName);
+
+    return 0;
+}
