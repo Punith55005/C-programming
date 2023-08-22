@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+
+    // Addition
+    int result_add = num1;
+    result_add += num2;
+
+    // Subtraction
+    int result_sub = num1;
+    result_sub -= num2;
+
+    // Multiplication
+    int result_mul = num1;
+    result_mul *= num2;
+
+    // Division
+    int result_div = num1;
+    if (num2 != 0) {
+        result_div /= num2;
+    } else {
+        printf("Division by zero is not allowed.\n");
+    }
+
+    printf("Result after addition: %d\n", result_add);
+    printf("Result after subtraction: %d\n", result_sub);
+    printf("Result after multiplication: %d\n", result_mul);
+    if (num2 != 0) {
+        printf("Result after division: %d\n", result_div);
+    }
+
+    return 0;
+}
