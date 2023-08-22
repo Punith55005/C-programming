@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    char inputChar, nextChar;
+
+    // Input the character
+    printf("Enter a character: ");
+    scanf(" %c", &inputChar);  // Notice the space before %c to consume any preceding newline
+
+    // Calculate the next character
+    nextChar = inputChar + 1;
+
+    // Display the next character
+    printf("The next character: %c\n", nextChar);
+
+    return 0;
+}
