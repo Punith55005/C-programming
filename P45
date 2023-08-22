@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int integerNum = 5;
+    float floatNum = 3.14;
+    
+    // Calculate the sum of integer and floating-point numbers
+    float sum = integerNum + floatNum;
+
+    // Calculate and print the size of the sum
+    size_t sizeOfSum = sizeof(sum);
+    printf("Size of the sum: %zu bytes\n", sizeOfSum);
+
+    return 0;
+}
