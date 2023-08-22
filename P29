@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float floatingNumber;
+    int nearestInteger;
+
+    printf("Enter a floating point number: ");
+    scanf("%f", &floatingNumber);
+
+    if (floatingNumber < 0) {
+        nearestInteger = (int)(floatingNumber - 0.5);
+    } else {
+        nearestInteger = (int)(floatingNumber + 0.5);
+    }
+
+    printf("Nearest integer: %d\n", nearestInteger);
+
+    return 0;
+}
