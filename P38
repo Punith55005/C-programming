@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 5, c = 10;
+
+    // Check and print the relationships
+    printf("%d > %d is %s\n", a, b, (a > b) ? "true" : "false");
+    printf("%d >= %d is %s\n", b, c, (b >= c) ? "true" : "false");
+    printf("%d < %d is %s\n", a, c, (a < c) ? "true" : "false");
+
+    return 0;
+}
