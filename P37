@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    // Input the positive number
+    printf("Enter a positive number: ");
+    scanf("%d", &number);
+
+    if (number <= 0) {
+        printf("Please enter a positive number.\n");
+    } else {
+        if ((number % 3 == 0) || (number % 7 == 0)) {
+            if (number % 3 == 0 && number % 7 == 0) {
+                printf("%d is a multiple of both 3 and 7.\n", number);
+            } else if (number % 3 == 0) {
+                printf("%d is a multiple of 3.\n", number);
+            } else {
+                printf("%d is a multiple of 7.\n", number);
+            }
+        } else {
+            printf("%d is neither a multiple of 3 nor a multiple of 7.\n", number);
+        }
+    }
+
+    return 0;
+}
