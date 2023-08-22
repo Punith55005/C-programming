@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int a = 8, b = 3;
+    int c, d, e, f, g;
+
+    // Perform operations and store results
+    c = a + b;
+    d = a - b;
+    e = a * b;
+    f = a / b;
+    g = a % b;
+
+    // Output the results
+    printf("Result of a + b: %d\n", c);
+    printf("Result of a - b: %d\n", d);
+    printf("Result of a * b: %d\n", e);
+    printf("Result of a / b: %d\n", f);
+    printf("Result of a %% b: %d\n", g);
+
+    return 0;
+}
