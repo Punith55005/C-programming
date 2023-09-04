@@ -1,0 +1,215 @@
+//p113
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    char inp[100];
+//    int length;
+//
+//    printf("Enter a string: ");
+//    scanf("%s",inp);
+//
+//    if (inp[strlen(inp) - 1] == '\n') {
+//        inp[strlen(inp) - 1] = '\0';
+//    }
+//
+//    length = strlen(inp);
+//
+//    printf("You entered: %s\n", inp);
+//    printf("Length of the string: %d\n", length);
+//
+//    return 0;
+//}
+//p114
+//#include<stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    char s1[100], s2[100], s3[200];
+//
+//    printf("Enter the first string (s1): ");
+//    scanf("%s", s1);
+//
+//    printf("Enter the second string (s2): ");
+//    scanf("%s", s2);
+//
+//    // Concatenate s1 and s2 into s3
+//    strcpy(s3, s1);
+//    strcat(s3, s2);
+//
+//    printf("Concatenated string (s3): %s\n", s3);
+//
+//    return 0;
+//}
+//p115
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    char str1[100], str2[100];
+//
+//    printf("Enter the first string: ");
+//    scanf("%s", str1);
+//
+//    printf("Enter the second string: ");
+//    scanf("%s", str2);
+//
+//    // Compare the two strings using strcmp
+//    if (strcmp(str1, str2) == 0) {
+//        printf("The two strings are the same.\n");
+//    } else {
+//        printf("The two strings are different.\n");
+//    }
+//
+//    return 0;
+//}
+//
+//p116
+//#include <stdio.h>
+//#include <ctype.h>
+//
+//int main() {
+//    char str[100];
+//
+//    printf("Enter a string: ");
+//    scanf("%s", str);
+//    for (int i = 0; str[i]; i++) {
+//        str[i] = toupper(str[i]);
+//    }
+//
+//    printf("Uppercase string: %s\n", str);
+//
+//    return 0;
+//}
+//extra
+//#include<stdio.h>
+//int main() {
+//    char string[100];
+//    int i;
+//    printf("enter the input :");
+//    scanf("%s",string);
+//    for (i=0;string[i];i++){
+//    string[i]=toupper(string[i]);
+//    }
+//    printf("the string is :%s",string);
+//return 0;
+//}
+////p117
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    char str[100];
+//
+//    printf("Enter a string: ");
+//    scanf("%[^\n]s", str);
+//    for (int i = 0; str[i]; i++) {
+//        if (str[i] == ' ') {
+//            str[i] = '_';
+//        }
+//    }
+//
+//    printf("Modified string: %s\n", str);
+//
+//    return 0;
+//}
+//p118
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    char str[100];
+//
+//    printf("Enter a string: ");
+//    scanf("%s", str);
+//    int length = strlen(str);
+//    printf("Reversed string: ");
+//    for (int i = length - 1; i >= 0; i--) {
+//        printf("%c", str[i]);
+//    }
+//
+//    printf("\n");
+//
+//    return 0;
+//}
+// p119 wap in c to read a string and print the number of times a given character appears
+//#include <stdio.h>
+//
+//int main() {
+//    char str[100];
+//    char targetChar;
+//
+//    printf("Enter a string: ");
+//    scanf("%s", str);
+//
+//    printf("Enter a character to count: ");
+//    scanf(" %c", &targetChar);
+//        int count = 0;
+//    for (int i = 0; str[i] != '\0'; i++) {
+//        if (str[i] == targetChar) {
+//            count++;
+//        }
+//    }
+//
+//    printf("The character '%c' appears %d times in the string.\n", targetChar, count);
+//
+//    return 0;
+//}
+//
+//p120 wap in c to search a substring within a string
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    char str[100];
+//    char substring[100];
+//
+//    printf("Enter a string: ");
+//    scanf("%s", str);
+//
+//    printf("Enter a substring to search for: ");
+//    scanf("%s", substring);
+//    char *result = strstr(str, substring);
+//
+//    if (result != NULL) {
+//        printf("The substring '%s' was found at position %ld in the string.\n", substring, result - str);
+//    } else {
+//        printf("The substring '%s' was not found in the string.\n", substring);
+//    }
+//
+//    return 0;
+//}
+//p121
+//#include <stdio.h>
+//#include <string.h>
+//
+//void bubbleSort(char str[]) {
+//    int length = strlen(str);
+//    int i, j;
+//    char temp;
+//
+//    for (i = 0; i < length - 1; i++) {
+//        for (j = 0; j < length - i - 1; j++) {
+//            if (str[j] > str[j + 1]) {
+//                // Swap the characters
+//                temp = str[j];
+//                str[j] = str[j + 1];
+//                str[j + 1] = temp;
+//            }
+//        }
+//    }
+//}
+//
+//int main() {
+//    char str[100];
+//
+//    printf("Enter a string: ");
+//    gets(str); // Input the string
+//
+//    bubbleSort(str); // Sort the string
+//
+//    printf("Sorted string: %s\n", str);
+//
+//    return 0;
+//}
+
