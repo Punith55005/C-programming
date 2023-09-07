@@ -1,0 +1,82 @@
+#include<stdio.h>
+int main()
+{
+    struct employee{
+    char name[50];
+    int id;
+    int salary;
+    int age;
+    }empl1 ,empl2;
+
+printf("enter the name,id,salary,age of the employee1 in order\n");
+scanf("%s %d %d %d",&empl1.name ,&empl1.id ,&empl1.salary ,&empl1.age);
+printf("enter the name,id,salary,age of the employee2 in order\n",empl2);
+scanf("%s %d %d %d",&empl2.name ,&empl2.id ,&empl2.salary ,&empl2.age);
+printf("name     emp id     salary     age\n");
+printf("%s     %d     %d     %d\n%s     %d     %d     %d ",empl1.name,empl1.id,empl1.salary,empl1.age,empl2.name,empl2.id,empl2.salary,empl2.age);
+return 0;
+}
+reverse of array elements
+#include<stdio.h>
+int main()
+{
+
+    int n,i;
+    printf("enter the size of array\n");
+    scanf("%d",&n);
+    int arr[n];
+    printf("enter the elements\n");
+
+
+    for (i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for (i=0;i<n;i++){
+        printf("the elements are:%d\n",arr[i]); }
+        for (i=n-1;i>=0;i--)
+        {
+            printf("the reverse of array is %d\n",arr[i]);
+        }
+        return 0;
+}
+
+p144
+#include<stdio.h>
+struct marks{
+char name[30];
+int marks;
+int sl_no;
+}stu[],temp;
+int main()
+{
+    int i,j,n;
+    printf("enter the number of students\n");
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++){
+    printf("enter the Serial number:");
+    scanf("%d",&stu[i].sl_no);
+    printf("enter the student name:");
+    scanf("%s",stu[i].name);
+    printf("enter the marks:");
+    scanf("%d",&stu[i].marks);
+}
+printf("\n");
+for(i=0;i<n;i++){
+    for(j=0;j<n;j++){
+        if(stu[i].marks<stu[j].marks)
+        {
+
+            struct marks temp = stu[i];
+            stu[i]=stu[j];
+            stu[j]=temp;
+        }
+    }
+}
+printf("the records are:\n");
+for(i=0;i<n;i++){
+    printf("serial number is :%d\n",stu[i].sl_no);
+    printf("student name is:%s\n",stu[i].name);
+    printf("marks obtained is :%d\n",stu[i].marks);
+}
+}
