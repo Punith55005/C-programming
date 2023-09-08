@@ -1,0 +1,56 @@
+p148
+#include <stdio.h>
+union MyUnion {
+    int integer;
+    float floating;
+    char character;
+};
+int main() {
+    union MyUnion myUnion;
+    size_t size = sizeof(myUnion);
+    printf("Size of the union: %zu bytes\n", size);
+
+    return 0;
+}
+p149
+#include <stdio.h>
+#include <string.h>
+union Variant {
+    int integer;
+    float floating;
+    char string[50];
+};
+
+int main() {
+    union Variant data;
+    data.integer = 42;
+    printf("Stored integer: %d\n", data.integer);
+    data.floating = 3.14159;
+    printf("Stored float: %.2f\n", data.floating);
+    strcpy(data.string, "Hello, Union!");
+    printf("Stored string: %s\n", data.string);
+
+    return 0;
+}
+p150
+#include <stdio.h>
+struct BitfieldExample {
+    unsigned int bit1 : 1;  // 1 bit for bit1
+    unsigned int bit2 : 3;  // 3 bits for bit2
+    unsigned int bit3 : 4;  // 4 bits for bit3
+};
+
+int main() {
+    struct BitfieldExample example;
+    example.bit1 = 1;
+    example.bit2 = 3;
+    example.bit3 = 7;
+    size_t size = sizeof(example);
+    printf("Size of the structure: %zu bytes\n", size);
+
+    printf("bit1: %u\n", example.bit1);
+    printf("bit2: %u\n", example.bit2);
+    printf("bit3: %u\n", example.bit3);
+
+    return 0;
+}
